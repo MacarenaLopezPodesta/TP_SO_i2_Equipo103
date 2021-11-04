@@ -3,4 +3,6 @@ Lopez Podesta Macarena
 Paredes Kaleniuk Melanie
 Pipliza Nadia
 a) Para actualizar mi respositorio utilizo los comandos: git remote add upstream y el link del repositorio forkeado (de BETA), git fecth upstream, git checkout main, git rebase upstream/main, git push -f origin main
-b) ALFA no puedo actualizar su repositorio al estado del de GAMMA
+b) ALFA pudo actualizar su repositorio a el estado del repositorio de gamma (usando git pull y el link del repositorio, git push)
+c) GAMMA pudo actualizar su repositorio a el estado del repositorio de alfa(usando git pull y el link del repositorio, git push)
+d) No, no se pierden
