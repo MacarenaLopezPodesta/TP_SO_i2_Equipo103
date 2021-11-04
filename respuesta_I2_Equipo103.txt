@@ -2,3 +2,4 @@
 Lopez Podesta Macarena
 Paredes Kaleniuk Melanie
 Pipliza Nadia
+a) Para actualizar mi respositorio utilizo los comandos: git remote add upstream y el link del repositorio forkeado (de BETA), git fecth upstream, git checkout main, git rebase upstream/main, git push -f origin main
