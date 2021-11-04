@@ -6,3 +6,92 @@ a) Para actualizar mi respositorio utilizo los comandos: git remote add upstream
 b) ALFA pudo actualizar su repositorio a el estado del repositorio de gamma (usando git pull y el link del repositorio, git push)
 c) GAMMA pudo actualizar su repositorio a el estado del repositorio de alfa(usando git pull y el link del repositorio, git push)
 d) No, no se pierden
+e)  	
+    BETA:
+	echo "# TP_SO_i2_Equipo103" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git branch -M main
+	git remote add origin https://github.com/MacarenaLopezPodesta/TP_SO_i2_Equipo103.git
+	git push -u origin main
+	echo >> fork.txt
+	git add .
+	git commit -m "BETTA: agregue archivos fork.txt"
+	git push
+
+    GAMMA
+	hace fork del repositorio
+	git clone https://github.com/melaniepk/TP_SO_i2_Equipo103.git
+	echo "Melanie Paredes Kaleniuk 192.168.0.11 12:10:36" >> fork.txt
+	git add .
+	git commit -m "GAMMA: agregue los datos requeridos"
+	git push
+
+    ALPHA
+	hace fork del repositorio
+	git clone https://github.com/npipliza/TP_SO_i2_Equipo103.git
+	echo "Pipliza Nadia IP 172.18.88.1 12:13:49" >> fork.txt
+	git add .
+	git commit -m "GAMMA: agregue los datos requeridos"
+	git push
+
+    BETTA
+	echo >> NuevoDato.txt
+	git add .
+	git commit -m "BETTA: agregue archivos NuevoDato.txt"
+	git push
+
+    GAMMA
+	git remote add upstream https://github.com/MacarenaLopezPodesta/TP_SO_i2_Equipo103.git
+	git fetch upstream
+	git checkout main
+	git rebase upstream/main
+	git push -f origin main
+
+    ALPHA
+	git remote add upstream https://github.com/melaniepk/TP_SO_i2_Equipo103.git
+	git fetch upstream
+	git checkout main
+	git rebase upstream/main
+	git push -f origin main
+
+    BETTA
+	echo "Lopez Podesta Macarena \n Paredes Kaleniuk Melanie \n Pipliza Nadia" >> respuesta_I2_Equipo103.txt
+	git add .
+	git commit -m "BETTA: agregue archivos respuesta_I2_Equipo103.txt"
+	git push
+
+    GAMMA
+	git fetch upstream
+	git checkout main
+	git rebase upstream/main
+	git push -f origin main
+	echo "texto" >> respuesta_I2_Equipo103.txt
+	git add .
+	git commit -m "texto"
+	git push
+	hace pull request en la pagina de github
+
+    BETTA
+	git remote add upstream https://github.com/melaniepk/TP_SO_i2_Equipo103.git
+	git fetch upstream
+	git checkout main
+	git rebase upstream/main
+	git push -f origin main
+	echo "texto" >> respuesta_I2_Equipo103.txt
+	git add .
+	git commit -m "texto"
+	git push
+
+    ALPHA
+	git pull https://github.com/MacarenaLopezPodesta/TP_SO_i2_Equipo103.git
+	git push
+	echo "texto" >> respuesta_I2_Equipo103.txt
+	git add .
+	git commit -m "texto"
+	git push
+	hace pull request en la pagina de github
+
+    BETTA y GAMMA
+	hace pull del repositorio
